@@ -7,3 +7,5 @@ let country2 = country
 
 
 alert(country2)
+
+ // JSF1 Assignment Data Types
