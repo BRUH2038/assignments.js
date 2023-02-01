@@ -1,21 +1,21 @@
 // JSF1 Assignment Variables and Values
 
 
-const country = "Mexico"
-const continent = "North America"
+const country = "Mexico";
+const continent = "North America";
 // let country = "Mexico"
 // let continent = "North America"
-let population = "129 million"
-let your_country = "Mexico"
-let country2 = country
+let population = 129;
+let your_country = "Mexico";
+let country2 = country;
 
 
 alert(country2)
 
 // JSF1 Assignment Data Types
 
-let isIsland = false
-let language = ""
+const isIsland = false;
+let language;
 console.log(isIsland)
 console.log(language)
 console.log(country)
@@ -25,3 +25,12 @@ console.log(population)
 language = "Spanish"
 
 // JSF1 Assignment Basic Operators
+
+console.log("Half the population is", population/2)
+console.log("country2 population is now", population + 1)
+console.log("Does your country have more people than Finland?", (population > 6))
+console.log("Does your country have less people than the average country?", (population > 34))
+
+description = ("Sinaloa is in ", country,", and its ", population, "million people speak", language, );
+console.log(description)
+//Europe, and its 11 million people speak Portuguese", description)
