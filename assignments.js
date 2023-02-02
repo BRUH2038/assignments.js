@@ -50,4 +50,17 @@ console.log(x)
 description = `Sinaloa is in ${country}, and its ${population} million people speak ${language}.`;
 console.log(description)
 
- // JSF1 Assignment if-else Statements.
+// JSF1 Assignment if-else Statements.
+
+if (population > 33) {
+    console.log(`${country}'s population is above average`)
+} 
+
+else if (population < 33) {
+    console.log(`${country}'s population is ${33 - population} million below average`)
+}
+
+else {
+    console.log(`${country}'s population is average`)
+}
+    
