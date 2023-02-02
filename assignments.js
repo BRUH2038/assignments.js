@@ -1,14 +1,14 @@
 // JSF1 Assignment Variables and Values
 
-
 const country = "Mexico";
 const continent = "North America";
+
 // let country = "Mexico"
 // let continent = "North America"
+
 let population = 129;
 let your_country = "Mexico";
 let country2 = country;
-
 
 alert(country2)
 
@@ -44,3 +44,10 @@ console.log(d)
 a = 2;
 let x = 2 + (a *= 2); //6;  
 console.log(x)
+
+// JSF1 Assignment String and Template Literals
+
+description = `Sinaloa is in ${country}, and its ${population} million people speak ${language}.`;
+console.log(description)
+
+ // JSF1 Assignment if-else Statements.
