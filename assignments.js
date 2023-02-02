@@ -31,6 +31,5 @@ console.log("country2 population is now", population + 1)
 console.log("Does your country have more people than Finland?", (population > 6))
 console.log("Does your country have less people than the average country?", (population > 34))
 
-description = ("Sinaloa is in ", country,", and its ", population, "million people speak", language, );
+let description = ("Sinaloa is in  Mexico and its 129 million people speak spanish.");
 console.log(description)
-//Europe, and its 11 million people speak Portuguese", description)
