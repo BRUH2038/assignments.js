@@ -33,3 +33,14 @@ console.log("Does your country have less people than the average country?", (pop
 
 let description = ("Sinaloa is in  Mexico and its 129 million people speak spanish.");
 console.log(description)
+
+// JSF1 Assignment Operator Precedence.
+let a = 1, b = 1;
+let c = ++a; //c = 2; actually 2
+let d = b++; //d = 2; actually  1
+console.log(c)
+console.log(d)
+
+a = 2;
+let x = 2 + (a *= 2); //6;  
+console.log(x)
