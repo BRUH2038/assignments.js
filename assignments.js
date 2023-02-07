@@ -88,10 +88,6 @@ console.log('19' - '13' + 17);//23 // actually 617 str
 console.log('123' < 57);//false
 console.log(5 + 6 + '4' + 9 - 4 - 2);//18 // actually 1143 int
 
-////////////////////////////////////////////////////////////////
-// JSF1 Assignment Type Conversion and Coercion
-////////////////////////////////////////////////////////////////
-
 // a. = 4, b. = 617, c. = 23, d. = false, e. = 1143
 
 console.log("JSF1 Assignment Type Conversion and Coercion");
@@ -123,3 +119,21 @@ console.log(" \t \n" - 2);
 a = prompt("First number?", 1);
 b = prompt("First number?", 2);
 alert(Number(a) + Number(b)); // 12
+
+////////////////////////////////////////////////////////////////
+// L10 ASSIGNMENT: JSF1 Assignment  Equality Operators
+////////////////////////////////////////////////////////////////
+
+let numNeighbours = prompt ('How many neighbor countries does your country have?');
+
+if (numNeighbours == 1){
+    alert("Only 1 border!")
+} 
+
+else if (numNeighbours >= 0){
+    alert("no borders")
+}
+
+else{
+    alert(numNeighbours +"borders")
+}
