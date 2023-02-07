@@ -4,9 +4,6 @@
 const country = "Mexico";
 const continent = "North America";
 
-// let country = "Mexico"
-// let continent = "North America"
-
 let population = 129;
 let your_country = "Mexico";
 let country2 = country;
@@ -16,7 +13,7 @@ alert(country2)
 // JSF1 Assignment Data Types
 ////////////////////////////////////////////////////////////////
 
-const isIsland = false;
+let isIsland = false;
 let language;
 console.log(typeof isIsland) //boolean
 console.log(typeof language) //undefined
@@ -136,4 +133,20 @@ else if (numNeighbours >= 0){
 
 else{
     alert(numNeighbours +"borders")
+}
+
+///////////////////////////////////////////////////////////
+//L11 Assignment:  JSF1 Assignment Logical Operator///////
+/////////////////////////////////////////////////////////
+
+//language = "English";
+//population = 49;
+//isIsland = false;
+
+if (language == "English" && population < 50 && isIsland === false){
+    console.log(` You should live in ${country} :)`)
+}
+
+else {
+    console.log(` ${country} does not meet your criteria (¬_¬ )`)
 }
