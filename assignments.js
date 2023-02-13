@@ -150,3 +150,22 @@ if (language == "English" && population < 50 && isIsland === false){
 else {
     console.log(` ${country} does not meet your criteria (¬_¬ )`)
 }
+
+///////////////////////////////////////////////////////////
+//  L14 Assignment:  JSF2 Assignment Function      ///////
+/////////////////////////////////////////////////////////
+
+console.log("L14 Assignment:")
+
+function describeCountry(country, population, capitalCity){
+    for (let i = 0; i < 3;i++){
+    country = prompt("country")
+    population = prompt("population")
+    capitalCity = prompt("capitalCity")
+    alert(`${country} has ${population} million people and its capital city is ${capitalCity}`)
+    let x = [`country: ${country}`, `population: ${population}`, `capitalCity: ${capitalCity}`];
+    console.log(x)
+};
+};
+
+describeCountry();
