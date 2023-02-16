@@ -1,3 +1,5 @@
+
+"use strict";
 ////////////////////////////////////////////////////////////////
 // JSF1 Assignment Variables and Values
 ////////////////////////////////////////////////////////////////
@@ -154,7 +156,7 @@ else {
 ///////////////////////////////////////////////////////////
 //  L14 Assignment:  JSF2 Assignment Function      ///////
 /////////////////////////////////////////////////////////
-
+/*
 console.log("L14 Assignment:")
 
 function describeCountry(country, population, capitalCity){
@@ -169,3 +171,53 @@ function describeCountry(country, population, capitalCity){
 };
 
 describeCountry();
+*/
+////////////////////////////////////////////////////////////////////////////////
+//  L15 Assignment:JSF2 Assignment Function Declarations vs. Expressions ///////
+////////////////////////////////////////////////////////////////////////////////
+
+console.log("L15 Assignment:")
+
+function percentageOfWorldMath(number){
+    let newPop = (number/7900)*100;
+    console.log(newPop)
+}
+
+function percentageOfWorld1(pop){
+    for(let i = 1; i < 4; i++){
+        pop = Number.parseFloat(prompt(`population of country ${i} in the millions`))
+        percentageOfWorldMath(pop);
+    };
+};
+
+function percentageOfWorld2(popList){
+
+    for(let i = 0;i < popList.length ; i++){
+        percentageOfWorldMath(popList[i]);
+    };
+};
+
+
+percentageOfWorld1();
+percentageOfWorld2([7900,15800,23700]);
+// put the prompt into for loop
+
+////////////////////////////////////////////////////////////////////////////////
+//  L16 Assignment:JSF2 Assignment Function Declarations vs. Expressions  ///////
+////////////////////////////////////////////////////////////////////////////////
+
+console.log("L16 Assignment:")
+
+function percentageOfWorld3(){
+
+}
+
+let sum = (num1, num2) => num1 + num2
+
+let stringLength = (str) => {console.log(`the length of "${str}" is:`, str.length); return str.length};
+
+/*
+function showAlert(name) {    
+    alert(alerts[(Math.floor(Math.random()*alerts.length))] + `, ${name}!`)
+}
+*/
