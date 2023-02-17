@@ -179,15 +179,12 @@ describeCountry();
 console.log("L15 Assignment:")
 
 function percentageOfWorldMath(number){
-    let newPop = (number/7900)*100;
-    console.log(newPop)
+    return (number/7900)*100;
 }
 
 function percentageOfWorld1(pop){
-    for(let i = 1; i < 4; i++){
-        pop = Number.parseFloat(prompt(`population of country ${i} in the millions`))
-        percentageOfWorldMath(pop);
-    };
+    pop = Number.parseFloat(prompt(`population of country ${pop}million`))
+    percentageOfWorldMath(pop);
 };
 
 function percentageOfWorld2(popList){
@@ -200,10 +197,9 @@ function percentageOfWorld2(popList){
 
 percentageOfWorld1();
 percentageOfWorld2([7900,15800,23700]);
-// put the prompt into for loop
 
 ////////////////////////////////////////////////////////////////////////////////
-//  L16 Assignment:JSF2 Assignment Function Declarations vs. Expressions  ///////
+//  L16 Assignment:JSF2 Assignment Function Declarations vs. Expressions  //////
 ////////////////////////////////////////////////////////////////////////////////
 
 console.log("L16 Assignment:")
@@ -216,8 +212,16 @@ let sum = (num1, num2) => num1 + num2
 
 let stringLength = (str) => {console.log(`the length of "${str}" is:`, str.length); return str.length};
 
-/*
-function showAlert(name) {    
-    alert(alerts[(Math.floor(Math.random()*alerts.length))] + `, ${name}!`)
+////////////////////////////////////////////////////////////////////////////////
+//  L17  Assignment:JSF2 Assignment Functions Calling Other Functions  ////////
+//////////////////////////////////////////////////////////////////////////////
+
+function describePopulation(country, population){
+    let percentageOfWorld = percentageOfWorldMath(population);
+    console.log (`${country} has ${population} million people, which is about ${percentageOfWorld.toPrecision(2)}% of the world.` )
 }
-*/
+describePopulation("CHINA", 10000)
+
+////////////////////////////////////////////////////////////////////////////////
+//  L18  Assignment:NAH                                                ////////
+//////////////////////////////////////////////////////////////////////////////
