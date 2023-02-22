@@ -179,7 +179,7 @@ describeCountry();
 console.log("L15 Assignment:")
 
 function percentageOfWorldMath(number){
-    return (number/7900)*100;
+    return ((number/7900)*100).toPrecision(3);
 }
 
 function percentageOfWorld1(pop){
@@ -228,13 +228,44 @@ describePopulation("CHINA", 10000)
 
 /////////////////////////////////////////
 // Assignment:Iteration: The for Loop///
-////////////////////////////////////////
+/*/////////////////////////////////////
 
 alert('hi');
 
-for(var voter = 1; voter < 50; voter++) {
-  setTimeout(function bruh() {
-    console.log(`voter ${voter} is currently voting`);
-  }, 1000);
-  bruh();
+function sleep(delay) {
+    var start = new Date().getTime();
+    while (new Date().getTime() < start + delay);
 }
+
+for(var voter = 1; voter < 51; voter++) {
+    console.log(`voter ${voter} is currently voting`);
+    sleep(3000);
+    console.log(`voter ${voter} is done voting`);
+}
+
+*/////////////////////////////////////////////////////////////
+/// ASSIGNMENT:   Looping Arrays, Breaking and Continuing ///
+////////////////////////////////////////////////////////////
+
+////////////////////////////////////////////
+/// ASSIGNMENT:   Introduction to Arrays ///
+////////////////////////////////////////////
+
+let populations = [1411, 1375, 334, 275]; //China,india, usa, indonesia
+if (populations.length == 4){
+    console.log("true")
+}
+else{
+    console.log("false")
+}
+
+let percentages = [];
+
+for (let i = 0; i < populations.length; i++) {
+    percentages += percentageOfWorldMath(populations[i]) 
+    console.log(percentageOfWorldMath(populations[i]))
+    console.log(percentages)
+}
+
+
+
