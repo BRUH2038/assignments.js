@@ -179,7 +179,8 @@ describeCountry();
 console.log("L15 Assignment:")
 
 function percentageOfWorldMath(number){
-    return ((number/7900)*100).toPrecision(3);
+    let ret = ((number/7900)*100).toPrecision(4);
+    return (ret);
 }
 
 function percentageOfWorld1(pop){
@@ -215,13 +216,13 @@ let stringLength = (str) => {console.log(`the length of "${str}" is:`, str.lengt
 ////////////////////////////////////////////////////////////////////////////////
 //  L17  Assignment:JSF2 Assignment Functions Calling Other Functions  ////////
 //////////////////////////////////////////////////////////////////////////////
-
+/*
 function describePopulation(country, population){
     let percentageOfWorld = percentageOfWorldMath(population);
     console.log (`${country} has ${population} million people, which is about ${percentageOfWorld.toPrecision(2)}% of the world.` )
 }
 describePopulation("CHINA", 10000)
-
+*/
 ////////////////////////////////////////////////////////////////////////////////
 //  L18  Assignment:NAH                                                ////////
 //////////////////////////////////////////////////////////////////////////////
@@ -251,6 +252,8 @@ for(var voter = 1; voter < 51; voter++) {
 /// ASSIGNMENT:   Introduction to Arrays ///
 ////////////////////////////////////////////
 
+console.log("a")
+
 let populations = [1411, 1375, 334, 275]; //China,india, usa, indonesia
 if (populations.length == 4){
     console.log("true")
@@ -262,10 +265,8 @@ else{
 let percentages = [];
 
 for (let i = 0; i < populations.length; i++) {
-    percentages += percentageOfWorldMath(populations[i]) 
-    console.log(percentageOfWorldMath(populations[i]))
-    console.log(percentages)
+    percentages.push(Number.parseFloat(percentageOfWorldMath(populations[i]))) 
 }
-
+console.log(percentages)
 
 
