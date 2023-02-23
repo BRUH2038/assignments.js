@@ -244,13 +244,9 @@ for(var voter = 1; voter < 51; voter++) {
     console.log(`voter ${voter} is done voting`);
 }
 
-*/////////////////////////////////////////////////////////////
-/// ASSIGNMENT:   Looping Arrays, Breaking and Continuing ///
-////////////////////////////////////////////////////////////
-
-////////////////////////////////////////////
+/*///////////////////////////////////////////
 /// ASSIGNMENT:   Introduction to Arrays ///
-////////////////////////////////////////////
+///////////////////////////////////////////
 
 console.log("a")
 
@@ -270,3 +266,68 @@ for (let i = 0; i < populations.length; i++) {
 console.log(percentages)
 
 
+//////////////////////////////////////////////////////////////
+/// ASSIGNMENT:   Looping Arrays, Breaking and Continuing ///
+////////////////////////////////////////////////////////////
+
+let percentages2 = [];
+
+for (let i = 0; i < populations.length; i++) {
+    percentages2.push(Number.parseFloat(percentageOfWorldMath(populations[i]))) 
+}
+console.log(percentages2)
+
+/*
+if (percentages2 = percentages){
+    console.log("percentages2 = percentages")
+}
+else{
+    console.log("percentages2 NOT percentages")
+}
+*/
+
+//////////////////////////////////////////////////////////////
+/// ASSIGNMENT:   Looping Backwards and Loops in Loops //////
+////////////////////////////////////////////////////////////
+let listOfNeighbours = [['Canada', 'Mexico'], ['Spain'], ['Norway', 'Sweden', 'Russia']];
+
+function logNeighbour(text){
+    console.log(`Neighbour: ${text}`)
+}
+
+for (let i = 0; i < listOfNeighbours.length; i++){
+
+    if (listOfNeighbours[i].length > 1){
+        for (let x = 0; x < listOfNeighbours[i].length; x++){
+            logNeighbour(listOfNeighbours[i][x]);
+        }
+    }
+
+    else{
+        logNeighbour(listOfNeighbours[i])
+    }
+    
+}
+
+//////////////////////////////////////////////////////////////
+/// ASSIGNMENT:   The while Loop                       //////
+////////////////////////////////////////////////////////////
+
+let percentages3 = [];
+let whileI = 0;
+
+while (whileI < populations.length) {
+    percentages3.push(Number.parseFloat(percentageOfWorldMath(populations[whileI]))) 
+    whileI++
+}
+
+console.log(percentages3)
+
+/*
+if (percentages3 = percentages){
+    console.log("percentages3 = percentages")
+}
+else{
+    console.log("percentages3 NOT percentages")
+}
+*/
